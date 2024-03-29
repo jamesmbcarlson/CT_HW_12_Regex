@@ -36,7 +36,7 @@ print(occupation)
 
 print("\n    === 3.2 URL Validator ===\n")
 
-urls = ["https://example.com", "www.example.com", "http://test.com"]
+urls = ["https://example.com", "www.example.com", "http://test.com", "http://testcase"]
 # Validate each URL in the list.  A valid URL should start with 'http://' or 'https://', followed by a domain name.
 for url in urls:
     match = re.match(r"(^https://|http://)+[A-Za-z0-9.-]+\.[A-z]{2,}", url)
@@ -57,3 +57,7 @@ for url in urls:
 # as he traveled through time, but for our purposes he's now 45.
 # I don't really know what creating "a format for his age in a flipped format" means, so I'll just 
 # switch the digits around and call it a clean 54. Q.E.D.
+#
+# tom_age = 2035 - 1985 - 5
+# tom_age_flipped = str(tom_age)[::-1]
+# print(tom_age_flipped)
